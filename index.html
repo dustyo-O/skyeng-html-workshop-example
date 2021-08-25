@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @charset "UTF-8";
+    @font-face {
+      font-family: StratosSkyeng;
+      src: url(./assets/fonts/stratosskyengweb-light.woff2) format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: fallback;
+    }
+    @font-face {
+      font-family: StratosSkyeng;
+      src: url(./assets/fonts/stratosskyengweb-regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: fallback;
+    }
+    @font-face{
+      font-family: StratosSkyeng;
+      src: url(./assets/fonts/stratosskyengweb-bold.woff2) format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display:fallback;
+    }
+  </style>
+  <style>
+    :root {
+      --color-violet: #D8D7FF;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .page {
+      margin: 0;
+      padding: 0 40px;
+
+      font-family: StratosSkyeng, 'Helvetica Neue', sans-serif;
+    }
+
+    .block-title {
+      font-size: 60px;
+      font-weight: 400;
+    }
+
+    .vebinar-block:first-child {
+      margin-top: 46px;
+    }
+
+    .vebinar-block {
+      box-sizing: border-box;
+      min-width: 844px;
+      margin-top: 40px;
+      padding: 40px;
+      border-radius: 30px;
+
+      background: var(--color-violet);
+    }
+
+    .vebinar-block-wrapper {
+      position: relative;
+    }
+
+    .vebinar-block-info {
+      float: left;
+      width: 240px;
+    }
+
+    .vebinar-block-details {
+      margin-left: 240px;
+    }
+
+    .vebinar-block-date-number {
+      font-size: 48px;
+      line-height: 65px;
+      letter-spacing: -0.13px;
+    }
+
+    .vebinar-block-date-month {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .vebinar-block-profession {
+      position: absolute;
+
+      color: var(--color-violet);
+
+      bottom: 0px;
+    }
+
+    .vebinar-block-title {
+      font-size: 40px;
+      line-height: 44px;
+      font-weight: 400;
+
+      margin-bottom: 29px;
+    }
+
+    .vebinar-block-time, .vebinar-block-speakers {
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .vebinar-block-speakers {
+      width: 50%;
+      margin-top: 8px;
+    }
+
+    .vebinar-block-button {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+
+      height: 60px;
+      padding: 18px 50px;
+
+      font-size: 28px;
+      line-height: 25px;
+      color: var(--color-violet);
+
+
+      border-radius: 30px;
+      border: none;
+      background-color: #fff;
+    }
+
+    .vebinar-block-wrapper::before, .vebinar-block-wrapper::after {
+      position: absolute;
+      left: 220px;
+
+      width: 40px;
+      height: 40px;
+
+      content: '';
+
+      border-radius: 50%;
+
+      background-color: #fff;
+    }
+
+    .vebinar-block-wrapper::before {
+      top: -60px;
+    }
+
+    .vebinar-block-wrapper::after {
+      bottom: -60px;
+    }
+  </style>
+</head>
+<body class="page">
+  <h1 class="block-title">Ближайшие вебинары</h1>
+  <div>
+    <section class="vebinar-block">
+      <div class="vebinar-block-wrapper">
+
+        <div class="vebinar-block-info">
+          <time class="vebinar-block-date"><span class="vebinar-block-date-number">25</span><span class="vebinar-block-date-month">сентября,<br/> понедельник</span></time>
+          <h6 class="vebinar-block-profession">инженер по тестированию</h6>
+        </div>
+        <div class="vebinar-block-details">
+          <h3 class="vebinar-block-title">День открытых дверей. Старт в IT — какая профессия вам подойдет и с чего начать</h3>
+          <time class="vebinar-block-time">15:00 — 17:00 по МСК</time>
+          <div class="vebinar-block-speakers">
+            Спикеры: Алексей Никушин, Алексей Никушин, Алексей Никушин, Алексей Никушин, Алексей Никушин,
+          </div>
+          <button class="vebinar-block-button">Узнать подробнее</button>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</body>
+</html>
